@@ -76,8 +76,9 @@ i:hover{
 
 /* Gallary section */
 
-.gallary-vdo{
-    
+.gallary-vdo iframe{
+    width: 550px;
+    height: 400px;
     padding: 1%;
 }
 
