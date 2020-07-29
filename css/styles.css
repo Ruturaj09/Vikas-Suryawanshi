@@ -76,13 +76,10 @@ i:hover{
 
 /* Gallary section */
 
-iframe{
-    margin: 3%;
-    width: 720px;
-    height: 468px;
+.gallary-vdo{
+    
+    padding: 1%;
 }
-
-
 
 /* contact section */
 .contact-btn{
