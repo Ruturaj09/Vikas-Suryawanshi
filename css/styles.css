@@ -55,6 +55,7 @@ h1:hover{
 } 
 .grid-img:hover{
     opacity: 50%;
+    transform: scale(1.1);
 }
 
 /* footer section */
