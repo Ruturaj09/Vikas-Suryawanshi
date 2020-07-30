@@ -29,11 +29,10 @@ h1:hover{
 .Top-section{
     text-align: center;
 }
-.Top-img{
-   margin: 3%;
-    /* width: 10%; */
-    
-   
+.banner-img{
+    text-align: center;
+    width: 70%;
+    margin: 3%;
 }
 
 /* navBar section */
@@ -109,10 +108,9 @@ i:hover{
 
 @media ( max-width: 800px) { 
     .Top-img{
-        margin-top: 2%;
-        margin-bottom: 2%;
-        width: 400px;
-        height: 200px;
+      margin: 3%;
+       text-align: center;
+       width: fit-content;
        
     }
     .navbar{
@@ -135,5 +133,9 @@ i:hover{
         text-align: left;
         margin: 3% 25%;
         color: white;
+    }
+    .gallary-vdo iframe{
+        width: 100%;
+        padding: 1%;
     }
  }
