@@ -156,4 +156,9 @@ i:hover{
         width: 100%;
         padding: 1%;
     }
+    iframe{
+        width: fit-content;
+        margin: 3% 0;
+        text-align: center;
+    }
  }
