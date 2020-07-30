@@ -1,6 +1,7 @@
 body{
     background-color: black;
     text-align: center;
+    font-family: 'Merriweather', serif;;
 }
 p{
     color: grey;
@@ -25,17 +26,15 @@ h1:hover{
 }
 
 /* top section */
-
+.banner-img{
+    margin: 5%;
+    width: 80%;
+}
 /* navBar section */
 
 .navbar{
     margin-left: 3%;
     margin-right: 3%;
-}
-.navbar-nav{
-    position: absolute;
-    margin-right: 3%;
-    
 }
 
 
