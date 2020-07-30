@@ -26,32 +26,30 @@ h1:hover{
 
 /* top section */
 
-.Top-section{
-    text-align: center;
-}
-.banner-img{
-    text-align: center;
-    width: 70%;
-    margin: 3%;
-}
-
 /* navBar section */
+
 .navbar{
     margin-left: 3%;
     margin-right: 3%;
 }
+.navbar-nav{
+    position: absolute;
+    margin-right: 3%;
+    text-align: right;
+}
+
 
 /* Introduction Section */
 
 .floatRight{
-    text-align: left;
+    text-align: center;
     float: left;
     margin-right: 30px;
    
    
 }
 .floatLeft{
-    text-align: right;
+    text-align: center;
     float: right;
     margin-left: 30px;
 }
@@ -130,9 +128,6 @@ i:hover{
     color: white;
 }
 
-#navbarNav{
-    text-align: left;
-}
 
 
 @media ( max-width: 800px) { 
