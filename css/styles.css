@@ -35,7 +35,7 @@ h1:hover{
 .navbar-nav{
     position: absolute;
     margin-right: 3%;
-    text-align: right;
+    
 }
 
 
@@ -59,7 +59,7 @@ img{
 .skill-row{
     padding: 3%;
     width: 85%;
-    margin: 3% 15%;
+    margin: 3% 15% 0  15%;
     text-align: center;
     line-height: 2;
     border: 5px;
