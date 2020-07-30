@@ -41,7 +41,27 @@ h1:hover{
     margin-right: 3%;
 }
 
+/* Introduction Section */
 
+.floatRight{
+    text-align: left;
+    float: left;
+    margin-right: 30px;
+   
+   
+}
+.floatLeft{
+    text-align: right;
+    float: right;
+    margin-left: 30px;
+}
+.skill-row{
+    width: 85%;
+    margin: 3% 15%;
+    text-align: center;
+    line-height: 2;
+}
+}
 /* Photos Section */
 .photo-grid{
     text-align: center;
