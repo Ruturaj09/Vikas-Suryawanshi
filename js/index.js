@@ -13,6 +13,6 @@ function sendEmail() {
 	Subject : "inquiry",
 	Body : "lkasndkasdasdasasdsadasdsad sad asd as das d as d asd as d asd as d ",
 	}).then(
-		message => alert("mail sent successfully");
+		message => alert("mail sent successfully")
 	);
 }
