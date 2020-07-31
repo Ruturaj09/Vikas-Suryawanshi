@@ -7,7 +7,7 @@ function sendEmail() {
 	Email.send({
 	Host: "smtp.gmail.com",
 	Username : "ruturajpujari99@gmail.com",
-	Password : "Ruturaj@09",
+	Password : "9404005919123456",
 	To : 'ruturajpujari999@gmail.com',
 	From : "ruturaj Pujari",
 	Subject : "inquiry",
