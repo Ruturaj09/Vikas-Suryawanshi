@@ -1,5 +1,9 @@
 <?php 
 2
+
+var MobileNo = $("#MobileNo");
+var address = $("#address");
+
 use PHPMailer\PHPMailer\PHPMailer;
 3
 ​
@@ -54,9 +58,9 @@ if(isset($_POST['name']) && isset($_POST['email'])){
 28
     $mail->addAddress("ruturajpujari999@gmail.com");
 29
-    $mail->MobileNo = ("$email ($MobileNo)");
+    $mail->Subject = ("$email ($MobileNo)");
 30
-    $mail->address = $address;
+    $mail->Body = $address;
 31
 ​
 32
