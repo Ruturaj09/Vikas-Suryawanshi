@@ -69,12 +69,12 @@
 <div class="row">
   
 <div class="col-lg-6 contact">
-  <form action="" method="POST" action="js/index.js">
+  <form id="myForm" action="" method="POST" action="contact.php">
 
 <div class="row">
   <div class="col-md-6 mb-3">
     <label for="Full Name">Full Name</label>
-    <input type="text" class="form-control" id="FullName" placeholder="your Name" value="" required="">
+    <input type="text" class="form-control"name="name" id="FullName" placeholder="your Name" value="" required="">
     <div class="invalid-feedback">
       Valid Full Name is required.
     </div>
@@ -82,7 +82,7 @@
  
   <div class="col-md-6 mb-3">
     <label for="email">Email <span class="text-muted">(Optional)</span></label>
-    <input type="email" class="form-control" id="email" placeholder="you@example.com">
+    <input type="email" class="form-control" name="email" id="email" placeholder="you@example.com">
     <div class="invalid-feedback">
       Please enter a valid email address for shipping updates.
     </div>
@@ -90,7 +90,7 @@
 
   <div class="col-lg-6">
     <label for="Mobile No.">Mobile No.</label>
-    <input type="text" class="form-control" id="MobileNo" placeholder="Mobile Number" required="">
+    <input type="text" class="form-control" name="mobile" id="MobileNo" placeholder="Mobile Number" required="">
     <div class="invalid-feedback">
       Please enter your Mobile No..
     </div>
@@ -98,7 +98,7 @@
 
   <div class="col-lg-12">
     <label for="address">Address</label>
-    <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+    <input type="text" class="form-control" name="adrs" id="address" placeholder="1234 Main St" required="">
     <div class="invalid-feedback">
       Please enter your address.
     </div>
@@ -111,8 +111,42 @@
    </div>
   </form>
 </div>
-    
+<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+        function sendEmail() {
+            var name = $("#name");
+            var email = $("#email");
+            var MobileNo = $("#MobileNo");
+            var address = $("#address");
 
+            if (isNotEmpty(name) && isNotEmpty(email) && isNotEmpty(subject) && isNotEmpty(body)) {
+                $.ajax({
+                   url: 'contact.php',
+                   method: 'POST',
+                   dataType: 'json',
+                   data: {
+                       name: name.val(),
+                       email: email.val(),
+                       MobileNo: MobileNo.val(),
+                       address: address.val()
+                   }, success: function (response) {
+                        $('#myForm')[0].reset();
+                        $('.sent-notification').text("Message Sent Successfully.");
+                   }
+                });
+            }
+        }
+
+        function isNotEmpty(caller) {
+            if (caller.val() == "") {
+                caller.css('border', '1px solid red');
+                return false;
+            } else
+                caller.css('border', '');
+
+            return true;
+        }
+    </script>
 
 </div> <br>
 <div class="col-lg-6 contact-info ">
@@ -144,7 +178,6 @@
 
         
         
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="js/index.js"></script>
+   
     </body>
 </html>
